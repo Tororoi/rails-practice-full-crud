@@ -1,0 +1,7 @@
+<h1>Books!</h1>
+
+<% @books.each do |book|%>
+    <ul>
+        <li><%= link_to book.title, book%> <%= "(#{book.pages})"%></li>
+    </ul>
+<%end%>
